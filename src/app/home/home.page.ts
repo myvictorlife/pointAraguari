@@ -24,7 +24,7 @@ export class HomePage {
   colorPink : string = 'rgb(255,128,237)';
   colorYellow : string = 'rgb(255, 207, 0)';
 
-  monthOfTheYear: string[] = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Agost', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+  monthOfTheYear: string[] = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
 
   constructor(public modalController: ModalController) {}
 
@@ -132,7 +132,7 @@ export class HomePage {
 
   getPieChart(){
     const data = {
-      labels: ['Vermelho', 'Azul', 'Amarelo'],
+      labels: ['Homens', 'Mulheres', 'Outros'],
       datasets: [{
         data: [300, 75, 224],
         backgroundColor: [this.colorGreen,
