@@ -1,5 +1,7 @@
 {
   "name": "PointAraguari",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -8,6 +8,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomePageModule } from './home/home.module';
+import { ModalRegisterPageModule } from './modal-register/modal-register.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
+  exports: [ HomePageModule, ModalRegisterPageModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
